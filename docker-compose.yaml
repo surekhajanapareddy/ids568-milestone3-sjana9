@@ -1,0 +1,94 @@
+x-airflow-common: &airflow-common
+  build: .
+  environment:
+    AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "false"
+    AIRFLOW__WEBSERVER__SECRET_KEY: "milestone3secret"
+    MLFLOW_TRACKING_URI: http://mlflow:5000
+  volumes:
+    - ./dags:/opt/airflow/dags
+    - ./logs:/opt/airflow/logs
+    - ./plugins:/opt/airflow/plugins
+    - ./mlruns:/opt/airflow/mlruns
+    - ./:/opt/airflow/project
+  depends_on:
+    - postgres
+    - mlflow
+
+services:
+
+  # ----------------------------
+  # PostgreSQL (Airflow Metadata DB)
+  # ----------------------------
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres-db-volume:/var/lib/postgresql/data
+    restart: always
+
+  # ----------------------------
+  # MLflow Tracking Server
+  # ----------------------------
+  mlflow:
+    build: .
+    command: >
+      bash -lc "mlflow server
+      --host 0.0.0.0
+      --port 5000
+      --backend-store-uri file:///opt/airflow/mlruns
+      --default-artifact-root file:///opt/airflow/mlruns"
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./mlruns:/opt/airflow/mlruns
+    restart: always
+
+  # ----------------------------
+  # Airflow DB Init
+  # ----------------------------
+  airflow-init:
+    <<: *airflow-common
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        airflow db migrate
+        airflow users create \
+          --username airflow \
+          --firstname Surekha \
+          --lastname R \
+          --role Admin \
+          --email admin@example.com \
+          --password airflow || true
+    restart: "no"
+
+  # ----------------------------
+  # Airflow Webserver
+  # ----------------------------
+  airflow-webserver:
+    <<: *airflow-common
+    command: webserver
+    ports:
+      - "8080:8080"
+    depends_on:
+      - airflow-init
+    restart: always
+
+  # ----------------------------
+  # Airflow Scheduler
+  # ----------------------------
+  airflow-scheduler:
+    <<: *airflow-common
+    command: scheduler
+    depends_on:
+      - airflow-init
+    restart: always
+
+volumes:
+  postgres-db-volume:

@@ -1,0 +1,15 @@
+artifact_uri: file:///opt/airflow/mlruns/923038201515770420/af994b4dba1143499c5801b514c27ab2/artifacts
+end_time: 1772418635791
+entry_point_name: ''
+experiment_id: '923038201515770420'
+lifecycle_stage: active
+run_id: af994b4dba1143499c5801b514c27ab2
+run_name: capable-lamb-727
+run_uuid: af994b4dba1143499c5801b514c27ab2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1772418625717
+status: 3
+tags: []
+user_id: airflow

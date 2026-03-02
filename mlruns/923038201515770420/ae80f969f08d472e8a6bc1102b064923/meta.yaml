@@ -1,0 +1,15 @@
+artifact_uri: file:///opt/airflow/mlruns/923038201515770420/ae80f969f08d472e8a6bc1102b064923/artifacts
+end_time: 1772415319306
+entry_point_name: ''
+experiment_id: '923038201515770420'
+lifecycle_stage: active
+run_id: ae80f969f08d472e8a6bc1102b064923
+run_name: victorious-rat-874
+run_uuid: ae80f969f08d472e8a6bc1102b064923
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1772415316010
+status: 3
+tags: []
+user_id: airflow
