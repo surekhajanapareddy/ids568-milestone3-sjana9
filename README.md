@@ -3,7 +3,6 @@
 [![CI](https://github.com/surekhajanapareddy/ids568-milestone3-sjana9/actions/workflows/train_and_validate.yml/badge.svg)](https://github.com/surekhajanapareddy/ids568-milestone3-sjana9/actions/workflows/train_and_validate.yml)
 
 <p align="center">
-  [![CI](https://github.com/surekhajanapareddy/ids568-milestone3-sjana9/actions/workflows/train_and_validate.yml/badge.svg)](https://github.com/surekhajanapareddy/ids568-milestone3-sjana9/actions/workflows/train_and_validate.yml)
   <img src="https://img.shields.io/badge/Docker-Containerized-blue?logo=docker">
   <img src="https://img.shields.io/badge/Airflow-2.8.1-red?logo=apache-airflow">
   <img src="https://img.shields.io/badge/MLflow-Experiment%20Tracking-blue?logo=mlflow">
