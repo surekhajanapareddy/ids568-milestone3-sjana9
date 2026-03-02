@@ -1,0 +1,15 @@
+artifact_uri: file:///opt/airflow/mlruns/923038201515770420/760fcd3f546341b3a90a0f2cfb8869d8/artifacts
+end_time: 1772434401510
+entry_point_name: ''
+experiment_id: '923038201515770420'
+lifecycle_stage: active
+run_id: 760fcd3f546341b3a90a0f2cfb8869d8
+run_name: redolent-gnat-524
+run_uuid: 760fcd3f546341b3a90a0f2cfb8869d8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1772434395815
+status: 3
+tags: []
+user_id: airflow

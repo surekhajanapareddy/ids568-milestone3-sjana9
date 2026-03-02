@@ -1,0 +1,15 @@
+artifact_uri: file:///opt/airflow/mlruns/923038201515770420/07463e946df646198760aab410bfc078/artifacts
+end_time: 1772434881713
+entry_point_name: ''
+experiment_id: '923038201515770420'
+lifecycle_stage: active
+run_id: 07463e946df646198760aab410bfc078
+run_name: youthful-boar-121
+run_uuid: 07463e946df646198760aab410bfc078
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1772434874751
+status: 3
+tags: []
+user_id: airflow

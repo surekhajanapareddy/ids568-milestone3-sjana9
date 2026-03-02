@@ -1,0 +1,15 @@
+artifact_uri: file:///opt/airflow/mlruns/923038201515770420/5b1deee2b689481dac4545a7eb9b87e5/artifacts
+end_time: 1772434510860
+entry_point_name: ''
+experiment_id: '923038201515770420'
+lifecycle_stage: active
+run_id: 5b1deee2b689481dac4545a7eb9b87e5
+run_name: omniscient-goose-79
+run_uuid: 5b1deee2b689481dac4545a7eb9b87e5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1772434503991
+status: 3
+tags: []
+user_id: airflow

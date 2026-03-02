@@ -1,0 +1,15 @@
+artifact_uri: file:///opt/airflow/mlruns/923038201515770420/fa5f06e380094a7694f45383d8fbb989/artifacts
+end_time: 1772434092758
+entry_point_name: ''
+experiment_id: '923038201515770420'
+lifecycle_stage: active
+run_id: fa5f06e380094a7694f45383d8fbb989
+run_name: unleashed-fish-995
+run_uuid: fa5f06e380094a7694f45383d8fbb989
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1772434085598
+status: 3
+tags: []
+user_id: airflow

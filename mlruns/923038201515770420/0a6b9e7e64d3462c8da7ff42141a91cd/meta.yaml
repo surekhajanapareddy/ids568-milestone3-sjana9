@@ -1,0 +1,15 @@
+artifact_uri: file:///opt/airflow/mlruns/923038201515770420/0a6b9e7e64d3462c8da7ff42141a91cd/artifacts
+end_time: 1772434442359
+entry_point_name: ''
+experiment_id: '923038201515770420'
+lifecycle_stage: active
+run_id: 0a6b9e7e64d3462c8da7ff42141a91cd
+run_name: intrigued-colt-888
+run_uuid: 0a6b9e7e64d3462c8da7ff42141a91cd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1772434436879
+status: 3
+tags: []
+user_id: airflow
