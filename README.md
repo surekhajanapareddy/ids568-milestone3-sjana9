@@ -62,29 +62,6 @@ Airflow DAG
 
 ---
 
-# 📁 Repository Structure
-
-```
-ids568-milestone3-sjana9/
-│
-├── dags/
-│   └── train_pipeline.py
-│
-├── preprocess.py
-├── train.py
-├── model_validation.py
-├── register_model.py
-│
-├── docker-compose.yaml
-├── Dockerfile
-├── requirements.txt
-│
-└── .github/
-    └── workflows/
-        └── train_and_validate.yml
-```
-
----
 
 # 🛠 Setup Instructions
 
@@ -279,29 +256,3 @@ Automatically runs on push to main branch.
 - CI/CD workflow
 
 ---
-
-# 🏁 Milestone Completion Status
-
-| Requirement | Status |
-|-------------|--------|
-| Airflow DAG | ✅ Complete |
-| MLflow Tracking | ✅ Complete |
-| Model Registry | ✅ Complete |
-| Retry Handling | ✅ Complete |
-| 5+ Experiments | ✅ Complete |
-| Validation Gate | ✅ Complete |
-| CI/CD Workflow | ✅ Complete |
-
----
-
-# 👩‍💻 Author
-
-Surekha Janapareddy  
-MS Business Analytics  
-University of Illinois Chicago  
-
----
-
-# 📜 License
-
-For academic use only.
